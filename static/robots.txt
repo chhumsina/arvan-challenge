@@ -1,0 +1,4 @@
+sitemap: https://firouzehplat.com/sitemap.xml
+
+User-agent: *
+Disallow: /private/
