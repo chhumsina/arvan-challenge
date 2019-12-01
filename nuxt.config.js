@@ -94,6 +94,7 @@ module.exports = {
     '@/plugins/axios',
     '@/plugins/mixins',
     '@/plugins/filters',
+    '@/plugins/vuelidate',
     '@/plugins/notification'
   ],
 

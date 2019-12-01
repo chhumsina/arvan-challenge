@@ -173,6 +173,7 @@ a {
 // Forms =======================================================================
 
 textarea,
+.form-control,
 textarea.form-control,
 input.form-control,
 input[type=text],
@@ -186,16 +187,15 @@ input[type=number],
 [contenteditable].form-control {
   margin-bottom: $form-margin-bottom;
   font-family: $font-name-regular, 'b Yekan', Tahoma;
-  @include box-shadow(none !important);
 
-  &:focus {
+  &, &:focus, &:active, &:hover {
     @include box-shadow(none !important);
   }
 
   &[disabled],
   &[readonly] {
-    box-shadow: none;
     border-color: $border-color;
+    @include box-shadow(none !important);
   }
 
   //&:not(textarea) {
@@ -205,6 +205,10 @@ input[type=number],
   &::-ms-clear {
     display: none;
   }
+}
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus{
+  @include box-shadow(none !important);
 }
 
 .input-group {
@@ -231,52 +235,6 @@ textarea.form-control {
   &:after, &:before {
     top: 2px;
   }
-}
-
-.custom-radio {
-  .custom-control-input:checked ~ .custom-control-label::before,
-  .custom-control-label::after,
-  .custom-control-label::before {
-    top: 3px;
-    @include border-radius(50% !important);
-  }
-}
-
-.custom-radio, .custom-checkbox {
-  .custom-control-input:checked ~ .custom-control-label::before {
-    border: none;
-  }
-}
-
-.custom-checkbox .custom-control-input:checked {
-  ~ .custom-control-label::after {
-    @include transform(scale(1.5))
-  }
-}
-
-.custom-radio .custom-control-input {
-  &:checked {
-    ~ .custom-control-label::after {
-      @include transform(scale(1.2));
-      @include transition(240ms);
-    }
-  }
-
-  & {
-    ~ .custom-control-label::after {
-      @include transform(scale(.75));
-    }
-  }
-}
-
-.custom-control-input {
-  right: 0;
-  width: 100%;
-}
-
-.custom-control-label::before {
-  background-color: #fbfbfb;
-  border: 1px solid #ddd;
 }
 
 // Navs ========================================================================
@@ -320,10 +278,4 @@ textarea.form-control {
       border: none;
     }
   }
-}
-
-// Containers ==================================================================
-.badge-info {
-  color: #fff;
-  background-color: $cyan;
 }
