@@ -108,8 +108,6 @@ module.exports = {
     '@nuxtjs/google-gtag', // google analytics
     '@nuxtjs/eslint-module',
     '@nuxtjs/universal-storage',
-
-    'nuxt-compress',
     'bootstrap-vue/nuxt'
   ],
 
