@@ -5,12 +5,12 @@ const themeColor = `#${process.env.THEME_COLOR}`;
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  mode: 'universal',
-  server: {
-    port: process.env.PROT
-  },
+  mode: 'spa',
+  // server: {
+  //   port: process.env.PROT
+  // },
   axios: {
-    baseURL: process.env.BASE_URL
+    baseURL: 'https://conduit.productionready.io/api'
   },
   auth: {
     redirect: false,
