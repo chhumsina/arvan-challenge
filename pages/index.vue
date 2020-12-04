@@ -4,9 +4,9 @@
       <b-row class="justify-content-center v-center">
         <b-col lg="6" md="8">
           <b-card class="border-0 text-center pb-3">
-            <v-button @click="hi()">
+            <button @click="hi()">
               Open
-            </v-button>
+            </button>
           </b-card>
         </b-col>
       </b-row>
