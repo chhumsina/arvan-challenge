@@ -105,7 +105,6 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/auth',
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap',
     '@nuxtjs/google-gtag', // google analytics
     '@nuxtjs/eslint-module',
     '@nuxtjs/universal-storage',
