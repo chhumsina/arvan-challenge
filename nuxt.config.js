@@ -5,7 +5,7 @@ const themeColor = `#${process.env.THEME_COLOR}`;
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  mode: 'ssr',
+  ssr: true,
   // server: {
   //   port: process.env.PROT
   // },
