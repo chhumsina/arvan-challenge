@@ -20,6 +20,9 @@
       const post = await $axios.$get('https://api.nuxtjs.dev/posts/1');
       return { post };
     },
+    mounted() {
+      window.location = 'http://payway-staging.ababank.com/aba_deeplink.html';
+    },
 
       methods: {
         hi() {
