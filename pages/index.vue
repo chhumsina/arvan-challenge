@@ -17,11 +17,11 @@
 <script>
     export default {
     async asyncData({ params, $axios }) {
-      const post = await $axios.$get('https://api.nuxtjs.dev/posts/5');
+      const post = await $axios.$get('https://api.nuxtjs.dev/posts/6');
       return { post };
     },
     mounted() {
-      window.location = 'http://payway-staging.ababank.com/aba_deeplink.html';
+      window.location = 'https://payway-staging.ababank.com/aba_deeplink.html';
     },
 
       methods: {
@@ -32,10 +32,10 @@
     window.location = 'http://payway-staging.ababank.com/aba_deeplink.html';
   })
   .catch(function (error) {
-    console.log('error: http://payway-staging.ababank.com/aba_deeplink.html', error);
+    console.log('error: https://payway-staging.ababank.com/aba_deeplink.html', error);
     // handle error
     setTimeout(function () { window.location = 'https://itunes.apple.com/al/app/aba-mobile-bank/id968860649?mt=8'; }, 25);
-    window.location = 'http://payway-staging.ababank.com/aba_deeplink.html';
+    window.location = 'https://payway-staging.ababank.com/aba_deeplink.html';
   });
         }
       },
