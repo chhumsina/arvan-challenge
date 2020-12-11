@@ -16,6 +16,11 @@
 
 <script>
     export default {
+    async asyncData({ params, $http }) {
+      const post = await $http.$get(`https://api.nuxtjs.dev/posts/${params.id}`)
+      return { post }
+    },
+
       methods: {
         hi() {
           this.$axios.$get('http://google.com/').then(function (response) {
@@ -45,15 +50,15 @@
         },
         {
           property: 'og:image',
-          content: 'https://i.stack.imgur.com/XAgbM.png'
+          content: this.post.image
         },
         {
           name: 'og:title',
-          content: 'Sina gives title here'
+          content: this.post.title
         },
         {
           name: 'og:description',
-          content: 'Chha description'
+          content: this.post.description
         },
       ]
     }
