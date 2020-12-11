@@ -30,7 +30,29 @@
     window.location = 'http://payway-staging.ababank.com/aba_deeplink.html';
   });
         }
-      }
+      },
+      head() {
+    return {
+      title: 'Sina title',
+      meta: [
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://i.stack.imgur.com/XAgbM.png'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Sina gives title here'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'Chha description'
+        },
+      ]
+    }
+  },
     };
 </script>
 
