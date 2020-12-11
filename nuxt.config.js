@@ -44,36 +44,6 @@ module.exports = {
     ],
     title: 'Arvan Challenges',
     base: { target: '_blank', href: '/' },
-    meta: [
-      { charset: 'utf-8' },
-
-      { hid: 'og:title', property: 'og:title', content: '' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
-
-      { hid: 'keyword', property: 'keyword', content: '' },
-      { hid: 'og:keyword', property: 'og:keyword', content: '' },
-
-      { hid: 'description', name: 'description', content: '' },
-      { hid: 'og:description', name: 'og:description', content: '' },
-
-      { httpEquiv: 'Expires', content: '0' },
-      { httpEquiv: 'Pragma', content: 'no-cache' },
-      { httpEquiv: 'Cache-Control', content: 'no-cache, no-store, must-revalidate' },
-
-      { property: 'og:type', content: 'website' },
-      { property: 'og:name', content: projectName },
-      { property: 'og:site_name', content: projectName },
-
-      { name: 'theme-color', content: themeColor },
-      { name: 'msapplication-navbutton-color', content: themeColor },
-
-      { name: 'mobile-web-app-capable', content: 'yes' },
-      { name: 'apple-touch-fullscreen', content: 'yes' },
-      { name: 'apple-mobile-web-app-capable', content: 'yes' },
-
-      { name: 'apple-mobile-web-app-title', content: ' ' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
-    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
