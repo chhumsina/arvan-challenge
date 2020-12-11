@@ -17,7 +17,7 @@
 <script>
     export default {
     async asyncData({ params, $http }) {
-      const post = await $http.$get(`https://api.nuxtjs.dev/posts/${params.id}`)
+      const post = await $http.$get(`https://api.nuxtjs.dev/posts/1`)
       return { post }
     },
 
