@@ -17,7 +17,7 @@
 <script>
     export default {
     async asyncData({ params, $axios }) {
-      const post = await $axios.$get('https://api.nuxtjs.dev/posts/1');
+      const post = await $axios.$get('https://api.nuxtjs.dev/posts/5');
       return { post };
     },
     mounted() {
