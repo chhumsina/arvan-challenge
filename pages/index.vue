@@ -36,6 +36,14 @@
       title: 'Sina title',
       meta: [
         {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          property: 'og:url',
+          content: 'https://wonderful-wilson-dd6749.netlify.app/'
+        },
+        {
           property: 'og:image',
           content: 'https://i.stack.imgur.com/XAgbM.png'
         },
