@@ -16,9 +16,9 @@
 
 <script>
     export default {
-    async asyncData({ params, $http }) {
-      const post = await $http.$get(`https://api.nuxtjs.dev/posts/1`)
-      return { post }
+    async asyncData({ params, $axios }) {
+      const post = await $axios.$get('https://api.nuxtjs.dev/posts/1');
+      return { post };
     },
 
       methods: {
@@ -59,10 +59,10 @@
         {
           name: 'og:description',
           content: this.post.description
-        },
+        }
       ]
-    }
-  },
+    };
+  }
     };
 </script>
 
