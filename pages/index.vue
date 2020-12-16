@@ -5,7 +5,7 @@
         <b-col lg="6" md="8">
           <b-card class="border-0 text-center pb-3">
             <button @click="hi()">
-              Open
+              Open 111111111111111111111
             </button>
           </b-card>
         </b-col>
