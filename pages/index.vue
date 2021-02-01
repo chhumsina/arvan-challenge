@@ -21,7 +21,7 @@
       return { post };
     },
     mounted() {
-      window.location = 'https://payway-staging.ababank.com/aba_deeplink.html';
+      // window.location = 'https://payway-staging.ababank.com/aba_deeplink.html';
     },
 
       methods: {
