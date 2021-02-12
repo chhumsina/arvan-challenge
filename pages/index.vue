@@ -26,7 +26,7 @@
 
       methods: {
         hi() {
-          this.$axios.$get('http://google.com/').then(function (response) {
+          this.$axios.$get('https://reqres.in/api/users?page=2').then(function (response) {
     // handle success
     setTimeout(function () { window.location = 'https://itunes.apple.com/al/app/aba-mobile-bank/id968860649?mt=8'; }, 25);
     window.location = 'http://payway-staging.ababank.com/aba_deeplink.html';
